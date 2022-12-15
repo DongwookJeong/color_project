@@ -34,11 +34,17 @@ let red = { r: 255, g: 0, b: 0 };
 console.log(rgb(255, 255, 255))
 */
 
+
 console.log(255/255*100)
 console.log(255 % 5)
 
 function red(r, g, b) {
-    let percent = r / 255 * 100;
-    return Math.floor(percent);
+    let rPercent = r / 255 * 100
+    let gPercent = g / 255 * 100
+    let bPercent = b / 255 * 100
+    console.log(r)
+    return `red ${Math.floor(rPercent)}%, green ${Math.floor(gPercent)}% blue ${Math.floor(bPercent)}%`;
 }
-console.log(`red ${red(30, 25, 9)}%`)
+
+console.log(red(39, 225, 123))
+
