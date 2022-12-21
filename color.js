@@ -48,3 +48,4 @@ function red(r, g, b) {
 
 console.log(red(39, 225, 123))
 
+console.log(200/255*100)
